@@ -71,4 +71,35 @@ else {
     alert("Importe a pagar: $" + ImporteFinal);
 }
 
+ 
+ 
+ 
+ 
+ 
+ switch (cantidad) {
+    case 1:
+    case 2:
+        descuento = 0;
+        break;
+
+    case 3:
+         if (marca == "ArgentinaLuz") {
+             descuento = precio *15/100;
+         } 
+         else if (marca == "FelipeLamparas") {
+             descuento = precio *10/100;
+         }
+         else {
+             descuento = precio *5/100;
+         }
+    break;
+
+    case 4:
+         if (marca =="ArgentinaLuz" || marca == "FelipieLamparas") {
+             descuento = precio*25/100;
+         }
+         else {
+             descuento = precio *20/100;
+         }
+
 }
